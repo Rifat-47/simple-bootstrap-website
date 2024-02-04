@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="css/bootstrap-4.5.2.css">
+
+	<title>iCoder - Heaven for coders!</title>
+</head>
+
+<body>
+	<!-- navigation bar -->
+	<nav id="navigationBar" class="navbar navbar-expand-lg navbar-dark bg-dark"></nav>
+
+	<!-- login Modal -->
+	<div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel"
+		aria-hidden="true"></div>
+
+	<!-- signup Modal -->
+	<div class="modal fade" id="signupModal" tabindex="-1" role="dialog" aria-labelledby="signupModalLabel"
+		aria-hidden="true"></div>
+
+	<!-- carousel -->
+	<div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-ride="carousel"></div>
+
+	<div class="container my-4">
+		<div class="row mb-2">
+			<div class="col-md-6">
+				<div class="card flex-md-row mb-4 shadow-sm h-md-250">
+					<div class="card-body d-flex flex-column align-items-start">
+						<strong class="d-inline-block mb-2 text-primary">World</strong>
+						<h3 class="mb-0">
+							<a class="text-dark" href="#">Python</a>
+						</h3>
+						<div class="mb-1 text-muted">Nov 12</div>
+						<p class="card-text mb-auto">Python is a high-level, general-purpose programming language.
+						</p>
+						<a href="#">continue reading</a>
+					</div>
+					<img class="bd-placeholder-img" width="200" height="250" src="thumbnail1.jpg" alt="">
+				</div>
+			</div>
+			<div class="col-md-6">
+				<div class="card flex-md-row mb-4 shadow-sm h-md-250">
+					<div class="card-body d-flex flex-column align-items-start">
+						<strong class="d-inline-block mb-2 text-success">Design</strong>
+						<h3 class="mb-0">
+							<a class="text-dark" href="#">Django</a>
+						</h3>
+						<div class="mb-1 text-muted">Nov 11</div>
+						<p class="card-text mb-auto">Django is a free and open-source, Python-based web framework
+							that runs on a
+							web
+							server.</p>
+						<a href="#">Continue reading</a>
+					</div>
+					<img class="bd-placeholder-img" width="200" height="250" src="thumbnail2.jpg" alt="">
+				</div>
+			</div>
+		</div>
+		<div class="row mb-2">
+			<div class="col-md-6">
+				<div class="card flex-md-row mb-4 shadow-sm h-md-250">
+					<div class="card-body d-flex flex-column align-items-start">
+						<strong class="d-inline-block mb-2 text-primary">World</strong>
+						<h3 class="mb-0">
+							<a class="text-dark" href="#">JavaScript</a>
+						</h3>
+						<div class="mb-1 text-muted">Nov 12</div>
+						<p class="card-text mb-auto">JavaScript, often abbreviated as JS, is a programming language
+							and core
+							technology of the World Wide Web, alongside HTML and CSS.</p>
+						<a href="#">continue reading</a>
+					</div>
+					<img class="bd-placeholder-img" width="200" height="250" src="thumbnail3.jpg" alt="">
+				</div>
+			</div>
+			<div class="col-md-6">
+				<div class="card flex-md-row mb-4 shadow-sm h-md-250">
+					<div class="card-body d-flex flex-column align-items-start">
+						<strong class="d-inline-block mb-2 text-success">Design</strong>
+						<h3 class="mb-0">
+							<a class="text-dark" href="#">.NET Core</a>
+						</h3>
+						<div class="mb-1 text-muted">Nov 11</div>
+						<p class="card-text mb-auto">The .NET platform is a free and open-source, managed computer
+							software
+							framework for Windows, Linux, and macOS operating systems.</p>
+						<a href="#">Continue reading</a>
+					</div>
+					<img class="bd-placeholder-img" width="200" height="250" src="thumbnail4.jpg" alt="">
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- footer  -->
+	<footer id="footer" class="container"></footer>
+
+	<!-- Optional JavaScript -->
+	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+	<script src="js/jquery-3.5.1.js"></script>
+	<script src="js/popper-1.16.1.js"></script>
+	<script src="js/bootstrap-4.5.2.js"></script>
+	<script>
+		$(function () {
+			$("#navigationBar").load("navbar.html #navigationBar > *");
+			$("#footer").load("/footer.html #footer > *");
+			$("#loginModal").load("/loginModal.html #loginModal > *");
+			$("#signupModal").load("/signupModal.html #signupModal > *");
+			$("#carouselExampleCaptions").load("/carousel.html #carouselExampleCaptions > *");
+		});
+	</script>
+
+</body>
+
+</html>
